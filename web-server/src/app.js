@@ -7,6 +7,7 @@ const options = {
     extensions: ['html']
 }
 
+app.set('view engine', 'hbs')
 app.use(express.static(publicDirectoryPath, options))
 
 app.get('/weather', (req, res) => {
