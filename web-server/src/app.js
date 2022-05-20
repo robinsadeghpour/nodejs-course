@@ -10,6 +10,13 @@ const options = {
 app.set('view engine', 'hbs')
 app.use(express.static(publicDirectoryPath, options))
 
+app.get('', (req, res) => {
+    res.render('index', {
+        title: 'Weather App',
+        name: 'Andrew Mead'
+    })
+})
+
 app.get('/weather', (req, res) => {
     res.send({forecast: 'forecast', location: 'location'})
 })
