@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Help</title>
+    <title>404</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
- <h1>Help</h1>
- <p>{{helpText}}</p>
+    <div class="main-containt">
+        {{>header}}
+        <p>{{errorText}}</p>
+    </div>
+    {{>footer}}
 </body>
 </html>
